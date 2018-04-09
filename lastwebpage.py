@@ -62,7 +62,7 @@ for x in url:
   
   response = requests.get("http://www.webpagetest.org/runtest.php?url="+x+"&runs=1&f=xml&k=A.f01eb720697f661682eea8925a0e0792&location=Frankfurt_Ruxit.3GFast&mobile=on&mdev=Nexus5X")
   time.sleep(6)
-#response1=requests.get("http://10.150.18.159/jsonResult.php?test=161111_37_CM7")
+
 #print(response.content)
   print(response.content)
   tree = ET.fromstring(response.content)
@@ -158,7 +158,7 @@ for x in url:
       csv_reader = csv.reader(temp_file, dialect=csv.excel_tab)
     #for line in csv_reader:
      #   print line			
-#http://10.150.18.159/results/16/11/21/TY/84D/1_Cached_waterfall.png
+
 
   url_pic="http://www.webpagetest.org/results/"+split1[2]+"/"+split1[1]+"/"+split1[0]+"/"+r[1]+"/"+r[2]+"/"
   print(url_pic)
@@ -178,7 +178,7 @@ for x in url:
 		with open(filepath,"wb") as f:
 		  f.write(response.content)
   	
-#http://10.150.18.159//results//16//11//15//FW//8R2//1_optimization.png
+
 #response=requests.get("http://10.150.18.159//results//16//11//15//FW//8R2//1_optimization.png")
 #http://10.150.18.159//results//16//11//15//1_optimization.png
 #image_name="1_optimization.png"
